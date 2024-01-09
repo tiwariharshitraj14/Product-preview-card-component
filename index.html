@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .bdy {
+      margin: 0px;
+      padding: 0px;
+      background-color: rgb(246, 218, 208);
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .img {
+      margin: 5px;
+      height: 348px;
+      border-radius: 10px 0px 0px 10px;
+      transform: translate(17px);
+    }
+
+    .text {
+      background-color: white;
+      border-radius: 0px 10px 10px 0px;
+      margin: 5px;
+      padding: 20px;
+    }
+
+    .line1 {
+      color: rgb(211, 211, 211);
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .line2 {
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 30px;
+      margin-top: 7px;
+      margin-bottom: 7px;
+    }
+
+    .line3 {
+      color: rgb(184, 182, 182);
+      margin-bottom: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .price{
+      margin-top: 7px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .price1 {
+      color: rgb(35, 152, 35);
+      font-weight: 900;
+      font-size: 25px;
+    }
+
+    .price2 {
+      color: rgb(184, 182, 182);
+      text-decoration: line-through;
+      font-size: 15px;
+    }
+
+    .cart {
+      background-color: rgb(35, 152, 35);
+      color: white;
+      text-align: center;
+      margin-top: 15px;
+      padding: 7px;
+      border-radius: 7px;
+      cursor: pointer;
+      font-weight: 600;
+      gap: 600;
+    }
+
+  </style>
+</head>
+
+<body class="bdy">
+  <div class="main">
+
+    <img class="img" src="images\image-product-desktop.jpg" alt="">
+
+    <div class="text">
+      <div class="line1">
+        Perfume
+      </div>
+      <div class="line2">
+        Gabrielle <br>Essence Eau <br>De Parfum
+      </div>
+      <div class="line3">
+        A floral, solar and voluptuous<br> interpretation composed by<br> Olivier Polge,
+        Perfumer-Creator<br> for the House of CHANEL.
+      </div>
+      <div class="price">
+        <div class="price1">
+          $149.99
+        </div>
+        <div class="price2">
+          $169.99
+        </div>
+      </div>
+      <div class="cart">
+        <img src="images\icon-cart.svg" alt="">
+        Add to Cart
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
